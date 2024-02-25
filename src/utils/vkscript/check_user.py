@@ -6,7 +6,6 @@ from src.database.models import Group
 
 
 async def is_group_member(api: API, user_id: int) -> Union[str, bool]:
-
     groups: List[Group] = await Group.all()
 
     for group in groups:

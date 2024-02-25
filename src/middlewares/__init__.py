@@ -1,11 +1,8 @@
-from src.middlewares.UserInfo import UserInfoMiddleware
+from src.middlewares.no_bot import NoBotMiddleware
+from src.middlewares.user_information import UserInformationMiddleware
 
 
-middlewares = (
-    UserInfoMiddleware,
-)
+middlewares = (NoBotMiddleware, UserInformationMiddleware)
 
 
-__all__ = (
-    middlewares,
-)
+__all__ = (middlewares,)

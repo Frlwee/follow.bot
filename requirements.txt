@@ -1,4 +1,10 @@
 tortoise-orm[asyncpg]==0.19.*
-vkbottle==4.3.12
+redis[hiredis]>=4.2.0rc1
+vkbottle==v4.4.0.dev1
+pydantic~=1.10.12
+ruff==0.0.287
 loguru==0.7.2
-uvloop
+aerich~=0.7.2
+Babel
+
+uvloop; sys_platform == 'linux' or sys_platform == 'linux2'
