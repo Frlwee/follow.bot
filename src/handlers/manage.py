@@ -87,8 +87,8 @@ async def check_user(message: Message, user_information: UsersUserFull) -> None:
         )
 
         await message.answer(gettext("messages.writing_condition_in_conversation").format(
-            user_id=user_information.id,
-            user_first_name=user_information.first_name,
-            user_last_name=user_information.last_name,
+            id=user_information.id,
+            first_name=user_information.first_name,
+            last_name=user_information.last_name,
             groups=groups
         ))
